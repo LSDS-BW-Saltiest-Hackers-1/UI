@@ -122,3 +122,134 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto Mono', monospace;
+  color: #ff5e00;
+}
+h1,
+h2,
+h3 {
+  font-family: 'Orbitron', sans-serif;
+}
+header {
+  background-color: #ff5e00;
+  width: 100%;
+  height: 11rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+}
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: none;
+  }
+}
+header .imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+@media (max-width: 500px) {
+  header .imgContainer {
+    padding: 1%;
+  }
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100rem;
+}
+header nav a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #31393C;
+  border-right: solid #31393C 0.4rem;
+  padding-right: 5.1%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+@media (max-width: 800px) {
+  header nav a {
+    padding-right: 4.4%;
+  }
+}
+@media (max-width: 500px) {
+  header nav a {
+    border-right: solid #31393C 0.3rem;
+    padding-right: 2.6%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+@media (max-width: 500px) {
+  header nav a {
+    font-size: 1.5rem;
+  }
+}
+header nav a:hover {
+  color: #f5f5ec;
+}
+header nav a:last-child {
+  border-right: none;
+}
+.logoContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 1%;
+  background-color: #f5f5ec;
+}
+.logoContainer h1 {
+  font-size: 2rem;
+  padding-top: 1%;
+}
+.landing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5ec;
+  height: 75.5vh;
+  width: 100%;
+}
+.landing .textContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.landing .textContainer h3 {
+  font-size: 5em;
+  text-align: center;
+  color: #31393C;
+  padding: 1%;
+}
+.landing .textContainer a {
+  background-color: #ff5e00;
+  cursor: pointer;
+  font-size: 3rem;
+  border-radius: none;
+  color: #31393C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3%;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 1%;
+}
+.landing .textContainer a:hover {
+  background-color: #31393C;
+  color: #ff5e00;
+}
