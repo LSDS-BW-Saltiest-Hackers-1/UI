@@ -6,6 +6,18 @@
     align-items: @align;
 }
 
-.button(@bg-color:@bg-button,)
+.button(@bg-color:@bg-button, @width:200px, @font-color:@footer-font){
+    background-color: @button-bg;
+    cursor:pointer;
+    font-size: 2rem;
+    border-radius:none;
+    color: @font-color;
+    .displayFlex(center,center);
+    padding:5%;
+    &:hover{
+        background-color:@font-color;
+        color:@button-bg;
+    }
+}
 
 
