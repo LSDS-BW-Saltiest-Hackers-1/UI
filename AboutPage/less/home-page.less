@@ -1,0 +1,127 @@
+
+.landing{
+    .displayFlex(center,center);
+    background-color:@tan;
+    height:70vh;
+    width:100%;
+    .textContainer{
+        .displayFlex(center,center);
+        flex-direction: column;
+        // background-color:grey;
+        width:70vw;
+        @media @mobile{
+            width: 90vw;
+        }
+        h2{
+            font-size:7rem;
+            text-align:center;
+            @media @mobile{
+                font-size: 5rem;
+            }
+            padding: 1%;
+        }
+        h3{
+            font-size:5rem;
+            text-align:center;
+            color:@onyx;
+            padding:1%;
+            @media @mobile{
+                font-size: 3rem;
+                padding:7%;
+            }
+            @media @tablet{
+                font-size: 4rem;
+            }
+        }
+        a{
+            .button();
+            margin:1%;
+        }
+        // background-color:grey;
+     
+    }
+
+}
+.dS{
+    h2{
+        font-size:7rem;
+        text-align: center;
+        padding: 2%;
+        margin:10vh;
+    }
+    .leftTile{
+        // background-color:grey;
+        .displayFlex(flex-start,base-line);
+        flex-direction:row;
+        padding:4vw;
+        width: 100vw;
+        @media @tablet{
+            height:50vh;
+        }
+        h3{
+            font-size:5rem;
+            color:@onyx;
+            padding:2rem 4rem;
+            line-height:8rem;
+            
+            @media @mobile{
+                font-size: 3rem;
+                padding:7%;
+            }
+            @media @tablet{
+                font-size: 4rem;
+                line-height: 6rem;
+                padding:1rem 4rem;
+            }
+        }
+    }
+    .rightTile{
+        // background-color:darkgrey;
+        .displayFlex(flex-end,base-line);
+        flex-direction:row-reverse;
+        padding:4vw;
+        width: 100vw;
+        text-align:right;
+        @media @tablet{
+            height:50vh;
+        }
+        h3{
+            font-size:5rem;
+            color:@onyx;
+            padding:2rem 4rem;
+            line-height:8rem;
+            
+            @media @mobile{
+                font-size: 3rem;
+                padding:7%;
+            }
+            @media @tablet{
+                font-size: 4rem;
+                line-height: 6rem;
+                padding:1rem 4rem;
+
+
+            }
+        }
+    }
+   
+    p{
+        color:@onyx;
+        padding:2rem 4rem;
+        font-size: 2rem;
+        line-height: 4rem;
+        @media @tablet{
+            font-size:1.5rem;
+            padding:1rem 3rem;
+            line-height: 3rem;
+
+        }
+
+
+    }
+    
+}
+footer{
+    height: 100vh;
+    background-color:@tan;
+}
