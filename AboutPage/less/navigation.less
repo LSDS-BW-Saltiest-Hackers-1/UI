@@ -1,8 +1,8 @@
-header{
+#header{
     display:none;
     background-color:@orange;
     position:fixed;
-    top:0;
+    top:-110px;
     transition: top 0.3s;
     width:100%;
     height: 11rem;
@@ -54,7 +54,7 @@ header{
             &:hover{
                 color:@tan;
                 animation-name: slowfade1;
-                animation-duration: .5s;  
+                animation-duration: .5s;
             }
             @keyframes slowfade1 {
                 // from {background-color: white}
@@ -74,14 +74,14 @@ header{
     flex-direction:column;
     padding:1vh;
     background-color:@tan;
-    margin-top:12vh;
+    // background-color:green;
     @media @tablet{
-        margin-top:12vh;
+        // margin-top:12vh;
         padding-top:1%;
     }
-@media @mobile{
-    margin-top:14vh;
-}
+    @media @mobile{
+        // margin-top:14vh;
+    }
     h1{
         font-size:2rem;
         padding-top:1%;
