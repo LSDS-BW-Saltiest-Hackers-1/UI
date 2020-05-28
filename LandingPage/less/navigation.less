@@ -13,18 +13,18 @@ header{
     .imgContainer{
         .displayFlex(center,center);
         padding:1%;
-        @media @mobile{
-            padding:1%;
-        }
     }
     nav{
         // background-color:red;
         .displayFlex(space-around, center);
-        width:60%;
+        width:70vw;
         @media @tablet{
-            width:94%;
+            width:94vw;
         }
-
+        @media @mobile{
+            width:100vw;
+        }
+      
         a {
             width:24%;
             font-size:2rem;
@@ -33,14 +33,17 @@ header{
             color:@onyx;
             padding: 1% 4% 1% 5%;
             .borderRight();
-            @media @mobile{
-                font-size:1.5rem;
-            }
             @media @tablet{
                 font-size:1.7rem;
                 padding: 2% 4%;
                 // background-color:red;
             }
+            @media @mobile{
+                font-size:1.3rem;
+                padding: 1% 3% 1% 3%;
+                // background-color:red;
+            }
+            
             &:hover{
                 color:@tan;
             }
@@ -56,9 +59,10 @@ header{
     flex-direction:column;
     padding:1%;
     background-color:@tan;
-    margin-top:6%;
+    margin-top:12vh;
     @media @tablet{
-        margin-top:14%;
+        margin-top:12vh;
+        padding-top:1%;
     }
 
     h1{
