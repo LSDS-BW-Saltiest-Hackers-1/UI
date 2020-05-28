@@ -346,7 +346,7 @@ footer .bottomFooter p {
   justify-content: center;
   align-items: center;
   background-color: #f5f5ec;
-  height: 90vh;
+  height: 80vh;
   width: 100%;
 }
 .landing .textContainer {
@@ -401,6 +401,12 @@ footer .bottomFooter p {
   text-decoration: none;
   font-weight: bold;
   margin: 1%;
+  padding: 0% 1%;
+  text-align: center;
+  line-height: 5rem;
+  -webkit-animation: fade-in 0.75s infinite alternate;
+  -moz-animation: fade-in 0.75s infinite alternate;
+  animation: fade-in 0.75s infinite alternate;
 }
 .landing .textContainer a:hover {
   background-color: #31393C;
@@ -418,6 +424,30 @@ footer .bottomFooter p {
     font-size: 2rem;
   }
 }
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes slowfade {
   from {
     background-color: #ff5e00;
@@ -432,36 +462,37 @@ footer .bottomFooter p {
     color: #ff5e00;
   }
 }
-.dS,
+#dS,
 .web {
+  padding-top: 5rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
 }
 @media (max-width: 550px) {
-  .dS,
+  #dS,
   .web {
     padding: 10rem 0rem;
   }
 }
-.dS h2,
+#dS h2,
 .web h2 {
   font-size: 7rem;
   text-align: center;
-  padding: 2%;
+  padding: 1%;
   margin: 10vh;
   border-bottom: 0.5rem solid #31393C;
   border-top: 0.5rem solid #31393C;
 }
 @media (max-width: 920px) {
-  .dS h2,
+  #dS h2,
   .web h2 {
     font-size: 6rem;
   }
 }
 @media (max-width: 550px) {
-  .dS h2,
+  #dS h2,
   .web h2 {
     font-size: 4.4rem;
     padding: 1%;
@@ -469,7 +500,7 @@ footer .bottomFooter p {
     line-height: 6rem;
   }
 }
-.dS .leftTile,
+#dS .leftTile,
 .web .leftTile {
   display: flex;
   justify-content: flex-start;
@@ -479,24 +510,24 @@ footer .bottomFooter p {
   width: 100vw;
 }
 @media (max-width: 550px) {
-  .dS .leftTile,
+  #dS .leftTile,
   .web .leftTile {
     margin: 14rem 0rem;
     flex-direction: column;
     justify-content: space-between;
   }
-  .dS .leftTile .textContainer,
+  #dS .leftTile .textContainer,
   .web .leftTile .textContainer {
     padding: 1rem;
   }
 }
 @media (max-width: 920px) {
-  .dS .leftTile,
+  #dS .leftTile,
   .web .leftTile {
     height: 50vh;
   }
 }
-.dS .leftTile h3,
+#dS .leftTile h3,
 .web .leftTile h3 {
   font-size: 5rem;
   color: #31393C;
@@ -504,7 +535,7 @@ footer .bottomFooter p {
   line-height: 8rem;
 }
 @media (max-width: 920px) {
-  .dS .leftTile h3,
+  #dS .leftTile h3,
   .web .leftTile h3 {
     font-size: 2.5rem;
     line-height: 5rem;
@@ -512,14 +543,14 @@ footer .bottomFooter p {
   }
 }
 @media (max-width: 550px) {
-  .dS .leftTile h3,
+  #dS .leftTile h3,
   .web .leftTile h3 {
     font-size: 2.5rem;
     padding: 5%;
     text-align: center;
   }
 }
-.dS .rightTile,
+#dS .rightTile,
 .web .rightTile {
   display: flex;
   justify-content: flex-start;
@@ -530,19 +561,19 @@ footer .bottomFooter p {
   text-align: right;
 }
 @media (max-width: 550px) {
-  .dS .rightTile,
+  #dS .rightTile,
   .web .rightTile {
     flex-direction: column;
     margin: 14rem 0rem;
   }
 }
 @media (max-width: 920px) {
-  .dS .rightTile,
+  #dS .rightTile,
   .web .rightTile {
     height: 50vh;
   }
 }
-.dS .rightTile h3,
+#dS .rightTile h3,
 .web .rightTile h3 {
   font-size: 5rem;
   color: #31393C;
@@ -550,7 +581,7 @@ footer .bottomFooter p {
   line-height: 8rem;
 }
 @media (max-width: 550px) {
-  .dS .rightTile h3,
+  #dS .rightTile h3,
   .web .rightTile h3 {
     font-size: 3rem;
     padding: 7%;
@@ -558,14 +589,14 @@ footer .bottomFooter p {
   }
 }
 @media (max-width: 920px) {
-  .dS .rightTile h3,
+  #dS .rightTile h3,
   .web .rightTile h3 {
     font-size: 2.5rem;
     line-height: 5rem;
     padding: 1rem 4rem;
   }
 }
-.dS p,
+#dS p,
 .web p {
   color: #31393C;
   padding: 2rem 4rem;
@@ -573,7 +604,7 @@ footer .bottomFooter p {
   line-height: 4rem;
 }
 @media (max-width: 920px) {
-  .dS p,
+  #dS p,
   .web p {
     font-size: 1.5rem;
     padding: 1rem 3rem;
@@ -581,7 +612,7 @@ footer .bottomFooter p {
   }
 }
 @media (max-width: 550px) {
-  .dS p,
+  #dS p,
   .web p {
     text-align: justify;
     line-height: 2.4rem;

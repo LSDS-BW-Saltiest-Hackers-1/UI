@@ -2,7 +2,7 @@
 .landing{
     .displayFlex(center,center);
     background-color:@tan;
-    height:90vh;
+    height:80vh;
     width:100%;
     .textContainer{
         .displayFlex(center,center);
@@ -37,6 +37,16 @@
         a{
             .button();
             margin:1%;
+            padding:0% 1%;
+            text-align:center;
+            line-height: 5rem;
+            .keyframes(fade-in;{
+                0% { opacity: 0; }
+                100% { opacity: 1; }
+                });
+            
+              .flash(fade-in 0.75s  infinite alternate)
+
         }
         @keyframes slowfade {
             from {background-color: @orange}
@@ -48,7 +58,8 @@
     }
 
 }
-.dS, .web{
+#dS, .web{
+    padding-top:5rem;
     .displayFlex(space-evenly,center);
     flex-direction:column;
     @media @mobile{
@@ -59,7 +70,7 @@
     h2{
         font-size:7rem;
         text-align: center;
-        padding: 2%;
+        padding: 1%;
         margin:10vh;
         border-bottom:.5rem solid @onyx;
         border-top:.5rem solid @onyx;
