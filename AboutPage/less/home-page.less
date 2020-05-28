@@ -16,7 +16,7 @@
             font-size:7rem;
             text-align:center;
             @media @mobile{
-                font-size: 5rem;
+                font-size: 3.5rem;
             }
             padding: 1%;
         }
@@ -25,19 +25,25 @@
             text-align:center;
             color:@onyx;
             padding:1%;
-            @media @mobile{
-                font-size: 3rem;
-                padding:7%;
-            }
+            
             @media @tablet{
                 font-size: 4rem;
+            }
+            @media @mobile{
+                font-size: 2rem;
+                padding:7%;
             }
         }
         a{
             .button();
             margin:1%;
         }
-        // background-color:grey;
+        @keyframes slowfade {
+            from {background-color: @orange}
+            to {background-color: @onyx}
+            from {color: @onyx}
+            to {color: @orange;}
+        }// background-color:grey;
      
     }
 
@@ -57,16 +63,16 @@
         margin:10vh;
         border-bottom:.5rem solid @onyx;
         border-top:.5rem solid @onyx;
-
+        @media @tablet{
+            font-size:6rem;
+        }
         @media @mobile{
             font-size:4.4rem;
             padding:1%;
             margin:7vh 3vh;
-            line-height:9rem;
+            line-height:6rem;
         }
-        @media @tablet{
-            font-size:6rem;
-        }
+ 
     }
     .leftTile{
         // background-color:grey;
@@ -75,7 +81,7 @@
         padding:4vw;
         width: 100vw;
         @media @mobile{
-            margin:11rem 0rem;
+            margin:14rem 0rem;
 
             flex-direction: column;
             justify-content:space-between;
@@ -96,16 +102,17 @@
             padding:2rem 4rem;
             line-height:8rem;
             
-            @media @mobile{
-                font-size: 2.5rem;
-                padding:7%;
-                text-align:center;
-            }
+           
             @media @tablet{
                 font-size: 2.5rem;
                 line-height: 5rem;
                 padding:1rem 4rem;
                 // background-color:green;
+            }
+            @media @mobile{
+                font-size: 2.5rem;
+                padding:5%;
+                text-align:center;
             }
         }
     }
@@ -119,7 +126,7 @@
         @media @mobile{
             flex-direction: column;
             // background-color:red;
-            margin:10rem 0rem;
+            margin:14rem 0rem;
 
 
 
@@ -127,9 +134,7 @@
         @media @tablet{
             height:50vh;
         }
-        @media @tablet{
-            height:50vh;
-        }
+
         h3{
             font-size:5rem;
             color:@onyx;
@@ -162,9 +167,10 @@
 
         }
         @media @mobile{
-                text-align:center;
-                // line-height:2rem;
-                // padding: 1rem 4rem;
+                text-align:justify;
+                line-height:2.4rem;
+                padding: 1rem 1rem;
+                // background-color:green;
         }
 
     }

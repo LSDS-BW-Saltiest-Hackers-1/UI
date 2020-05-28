@@ -155,18 +155,25 @@ header {
   justify-content: space-between;
   align-items: none;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   header {
     display: flex;
     justify-content: space-around;
     align-items: none;
+    flex-direction: column;
+    height: 11rem;
   }
 }
 header .imgContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1%;
+  padding: 1vh;
+}
+@media (max-width: 550px) {
+  header .imgContainer {
+    padding: 0rem;
+  }
 }
 header nav {
   display: flex;
@@ -174,14 +181,17 @@ header nav {
   align-items: center;
   width: 70vw;
 }
-@media (max-width: 800px) {
+@media (max-width: 920px) {
   header nav {
     width: 94vw;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   header nav {
-    width: 100vw;
+    width: 96vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 header nav a {
@@ -196,30 +206,40 @@ header nav a {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 920px) {
   header nav a {
     border-right: solid #31393C 0.2rem;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   header nav a {
     border-right: solid #31393C 0.15rem;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 920px) {
   header nav a {
     font-size: 1.7rem;
     padding: 2% 4%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   header nav a {
-    font-size: 1.3rem;
-    padding: 1% 3% 1% 3%;
+    font-size: 1rem;
+    padding: 1% 0;
   }
 }
 header nav a:hover {
   color: #f5f5ec;
+  animation-name: slowfade1;
+  animation-duration: 0.5s;
+}
+@keyframes slowfade1 {
+  from {
+    color: #31393C;
+  }
+  to {
+    color: #f5f5ec;
+  }
 }
 header nav a:last-child {
   border-right: none;
@@ -233,10 +253,15 @@ header nav a:last-child {
   background-color: #f5f5ec;
   margin-top: 12vh;
 }
-@media (max-width: 800px) {
+@media (max-width: 920px) {
   .logoContainer {
     margin-top: 12vh;
     padding-top: 1%;
+  }
+}
+@media (max-width: 550px) {
+  .logoContainer {
+    margin-top: 14vh;
   }
 }
 .logoContainer h1 {
@@ -267,7 +292,7 @@ footer .topFooter p {
   padding: 1vh;
   padding-bottom: 4rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   footer .topFooter p {
     font-size: 1rem;
     line-height: 2.5rem;
@@ -283,7 +308,7 @@ footer .topFooter a {
   font-weight: bold;
   padding: 1%;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   footer .topFooter a {
     padding: 2%;
     font-size: 1.5rem;
@@ -292,6 +317,22 @@ footer .topFooter a {
 footer .topFooter a:hover {
   background-color: #ff5e00;
   color: #f5f5ec;
+  animation-name: slowfade2;
+  animation-duration: 0.5s;
+}
+@keyframes slowfade2 {
+  from {
+    background-color: #f5f5ec;
+  }
+  to {
+    background-color: #ff5e00;
+  }
+  from {
+    color: #31393C;
+  }
+  to {
+    color: #f5f5ec;
+  }
 }
 footer .bottomFooter {
   padding: 2vh;
@@ -320,7 +361,7 @@ footer .bottomFooter p {
   flex-direction: column;
   width: 70vw;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .landing .textContainer {
     width: 90vw;
   }
@@ -330,9 +371,9 @@ footer .bottomFooter p {
   text-align: center;
   padding: 1%;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .landing .textContainer h2 {
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
 }
 .landing .textContainer h3 {
@@ -341,15 +382,15 @@ footer .bottomFooter p {
   color: #31393C;
   padding: 1%;
 }
-@media (max-width: 500px) {
-  .landing .textContainer h3 {
-    font-size: 3rem;
-    padding: 7%;
-  }
-}
-@media (max-width: 800px) {
+@media (max-width: 920px) {
   .landing .textContainer h3 {
     font-size: 4rem;
+  }
+}
+@media (max-width: 550px) {
+  .landing .textContainer h3 {
+    font-size: 2rem;
+    padding: 7%;
   }
 }
 .landing .textContainer a {
@@ -369,15 +410,31 @@ footer .bottomFooter p {
 .landing .textContainer a:hover {
   background-color: #31393C;
   color: #ff5e00;
+  animation-name: slowfade;
+  animation-duration: 0.5s;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .landing .textContainer a {
     width: 90vw;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 920px) {
   .landing .textContainer a {
     font-size: 2rem;
+  }
+}
+@keyframes slowfade {
+  from {
+    background-color: #ff5e00;
+  }
+  to {
+    background-color: #31393C;
+  }
+  from {
+    color: #31393C;
+  }
+  to {
+    color: #ff5e00;
   }
 }
 .dS,
@@ -387,7 +444,7 @@ footer .bottomFooter p {
   align-items: center;
   flex-direction: column;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .dS,
   .web {
     padding: 10rem 0rem;
@@ -402,19 +459,19 @@ footer .bottomFooter p {
   border-bottom: 0.5rem solid #31393C;
   border-top: 0.5rem solid #31393C;
 }
-@media (max-width: 500px) {
+@media (max-width: 920px) {
+  .dS h2,
+  .web h2 {
+    font-size: 6rem;
+  }
+}
+@media (max-width: 550px) {
   .dS h2,
   .web h2 {
     font-size: 4.4rem;
     padding: 1%;
     margin: 7vh 3vh;
-    line-height: 9rem;
-  }
-}
-@media (max-width: 800px) {
-  .dS h2,
-  .web h2 {
-    font-size: 6rem;
+    line-height: 6rem;
   }
 }
 .dS .leftTile,
@@ -426,10 +483,10 @@ footer .bottomFooter p {
   padding: 4vw;
   width: 100vw;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .dS .leftTile,
   .web .leftTile {
-    margin: 11rem 0rem;
+    margin: 14rem 0rem;
     flex-direction: column;
     justify-content: space-between;
   }
@@ -438,7 +495,7 @@ footer .bottomFooter p {
     padding: 1rem;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 920px) {
   .dS .leftTile,
   .web .leftTile {
     height: 50vh;
@@ -451,20 +508,20 @@ footer .bottomFooter p {
   padding: 2rem 4rem;
   line-height: 8rem;
 }
-@media (max-width: 500px) {
-  .dS .leftTile h3,
-  .web .leftTile h3 {
-    font-size: 2.5rem;
-    padding: 7%;
-    text-align: center;
-  }
-}
-@media (max-width: 800px) {
+@media (max-width: 920px) {
   .dS .leftTile h3,
   .web .leftTile h3 {
     font-size: 2.5rem;
     line-height: 5rem;
     padding: 1rem 4rem;
+  }
+}
+@media (max-width: 550px) {
+  .dS .leftTile h3,
+  .web .leftTile h3 {
+    font-size: 2.5rem;
+    padding: 5%;
+    text-align: center;
   }
 }
 .dS .rightTile,
@@ -477,20 +534,14 @@ footer .bottomFooter p {
   width: 100%;
   text-align: right;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .dS .rightTile,
   .web .rightTile {
     flex-direction: column;
-    margin: 10rem 0rem;
+    margin: 14rem 0rem;
   }
 }
-@media (max-width: 800px) {
-  .dS .rightTile,
-  .web .rightTile {
-    height: 50vh;
-  }
-}
-@media (max-width: 800px) {
+@media (max-width: 920px) {
   .dS .rightTile,
   .web .rightTile {
     height: 50vh;
@@ -503,7 +554,7 @@ footer .bottomFooter p {
   padding: 2rem 4rem;
   line-height: 8rem;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .dS .rightTile h3,
   .web .rightTile h3 {
     font-size: 3rem;
@@ -511,7 +562,7 @@ footer .bottomFooter p {
     text-align: center;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 920px) {
   .dS .rightTile h3,
   .web .rightTile h3 {
     font-size: 2.5rem;
@@ -526,7 +577,7 @@ footer .bottomFooter p {
   font-size: 2rem;
   line-height: 4rem;
 }
-@media (max-width: 800px) {
+@media (max-width: 920px) {
   .dS p,
   .web p {
     font-size: 1.5rem;
@@ -534,9 +585,11 @@ footer .bottomFooter p {
     line-height: 3rem;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .dS p,
   .web p {
-    text-align: center;
+    text-align: justify;
+    line-height: 2.4rem;
+    padding: 1rem 1rem;
   }
 }

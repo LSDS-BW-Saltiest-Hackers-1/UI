@@ -42,7 +42,15 @@ footer{
           &:hover {
               background-color:@orange;
               color:@tan;
+              animation-name: slowfade2;
+              animation-duration: .5s;
           }
+          @keyframes slowfade2 {
+            from {background-color:@tan};
+            to {background-color:@orange};
+            from {color:@onyx};
+            to{color:@tan};
+        }
 
         }
     }
