@@ -140,6 +140,9 @@ h2,
 h3 {
   font-family: 'Orbitron', sans-serif;
 }
+body {
+  overflow-x: hidden;
+}
 header {
   display: none;
   background-color: #ff5e00;
@@ -240,6 +243,68 @@ header nav a:last-child {
   font-size: 2rem;
   padding-top: 1%;
 }
+footer {
+  height: 35%;
+  background-color: #31393C;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color: #f5f5ec;
+}
+footer .topFooter {
+  padding: 5vh;
+  width: 90vw;
+  border-bottom: solid black 0.1rem;
+  text-align: center;
+}
+footer .topFooter h4 {
+  font-size: 3rem;
+  padding: 1vh;
+}
+footer .topFooter p {
+  font-size: 1.7rem;
+  padding: 1vh;
+  padding-bottom: 4rem;
+}
+@media (max-width: 500px) {
+  footer .topFooter p {
+    font-size: 1rem;
+    line-height: 2.5rem;
+  }
+}
+footer .topFooter a {
+  background-color: #f5f5ec;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #31393C;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1%;
+}
+@media (max-width: 500px) {
+  footer .topFooter a {
+    padding: 2%;
+    font-size: 1.5rem;
+  }
+}
+footer .topFooter a:hover {
+  background-color: #ff5e00;
+  color: #f5f5ec;
+}
+footer .bottomFooter {
+  padding: 2vh;
+  text-align: center;
+}
+footer .bottomFooter h3 {
+  padding: 1vh;
+  font-size: 1.5rem;
+}
+footer .bottomFooter p {
+  padding: 1vh;
+  font-size: 1.3rem;
+}
 .landing {
   display: flex;
   justify-content: center;
@@ -315,91 +380,163 @@ header nav a:last-child {
     font-size: 2rem;
   }
 }
-.dS h2 {
+.dS,
+.web {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 500px) {
+  .dS,
+  .web {
+    padding: 10rem 0rem;
+  }
+}
+.dS h2,
+.web h2 {
   font-size: 7rem;
   text-align: center;
   padding: 2%;
   margin: 10vh;
+  border-bottom: 0.5rem solid #31393C;
+  border-top: 0.5rem solid #31393C;
 }
-.dS .leftTile {
+@media (max-width: 500px) {
+  .dS h2,
+  .web h2 {
+    font-size: 4.4rem;
+    padding: 1%;
+    margin: 7vh 3vh;
+    line-height: 9rem;
+  }
+}
+@media (max-width: 800px) {
+  .dS h2,
+  .web h2 {
+    font-size: 6rem;
+  }
+}
+.dS .leftTile,
+.web .leftTile {
   display: flex;
   justify-content: flex-start;
-  align-items: base-line;
+  align-items: center;
   flex-direction: row;
   padding: 4vw;
   width: 100vw;
 }
+@media (max-width: 500px) {
+  .dS .leftTile,
+  .web .leftTile {
+    margin: 11rem 0rem;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .dS .leftTile .textContainer,
+  .web .leftTile .textContainer {
+    padding: 1rem;
+  }
+}
 @media (max-width: 800px) {
-  .dS .leftTile {
+  .dS .leftTile,
+  .web .leftTile {
     height: 50vh;
   }
 }
-.dS .leftTile h3 {
+.dS .leftTile h3,
+.web .leftTile h3 {
   font-size: 5rem;
   color: #31393C;
   padding: 2rem 4rem;
   line-height: 8rem;
 }
 @media (max-width: 500px) {
-  .dS .leftTile h3 {
-    font-size: 3rem;
+  .dS .leftTile h3,
+  .web .leftTile h3 {
+    font-size: 2.5rem;
     padding: 7%;
+    text-align: center;
   }
 }
 @media (max-width: 800px) {
-  .dS .leftTile h3 {
-    font-size: 4rem;
-    line-height: 6rem;
+  .dS .leftTile h3,
+  .web .leftTile h3 {
+    font-size: 2.5rem;
+    line-height: 5rem;
     padding: 1rem 4rem;
   }
 }
-.dS .rightTile {
+.dS .rightTile,
+.web .rightTile {
   display: flex;
-  justify-content: flex-end;
-  align-items: base-line;
+  justify-content: flex-start;
+  align-items: center;
   flex-direction: row-reverse;
   padding: 4vw;
-  width: 100vw;
+  width: 100%;
   text-align: right;
 }
+@media (max-width: 500px) {
+  .dS .rightTile,
+  .web .rightTile {
+    flex-direction: column;
+    margin: 10rem 0rem;
+  }
+}
 @media (max-width: 800px) {
-  .dS .rightTile {
+  .dS .rightTile,
+  .web .rightTile {
     height: 50vh;
   }
 }
-.dS .rightTile h3 {
+@media (max-width: 800px) {
+  .dS .rightTile,
+  .web .rightTile {
+    height: 50vh;
+  }
+}
+.dS .rightTile h3,
+.web .rightTile h3 {
   font-size: 5rem;
   color: #31393C;
   padding: 2rem 4rem;
   line-height: 8rem;
 }
 @media (max-width: 500px) {
-  .dS .rightTile h3 {
+  .dS .rightTile h3,
+  .web .rightTile h3 {
     font-size: 3rem;
     padding: 7%;
+    text-align: center;
   }
 }
 @media (max-width: 800px) {
-  .dS .rightTile h3 {
-    font-size: 4rem;
-    line-height: 6rem;
+  .dS .rightTile h3,
+  .web .rightTile h3 {
+    font-size: 2.5rem;
+    line-height: 5rem;
     padding: 1rem 4rem;
   }
 }
-.dS p {
+.dS p,
+.web p {
   color: #31393C;
   padding: 2rem 4rem;
   font-size: 2rem;
   line-height: 4rem;
 }
 @media (max-width: 800px) {
-  .dS p {
+  .dS p,
+  .web p {
     font-size: 1.5rem;
     padding: 1rem 3rem;
     line-height: 3rem;
   }
 }
-footer {
-  height: 100vh;
-  background-color: #f5f5ec;
+@media (max-width: 500px) {
+  .dS p,
+  .web p {
+    text-align: center;
+  }
 }

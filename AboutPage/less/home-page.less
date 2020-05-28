@@ -42,19 +42,51 @@
     }
 
 }
-.dS{
+.dS, .web{
+    .displayFlex(space-evenly,center);
+    flex-direction:column;
+    @media @mobile{
+        padding:10rem 0rem;
+
+
+    }
     h2{
         font-size:7rem;
         text-align: center;
         padding: 2%;
         margin:10vh;
+        border-bottom:.5rem solid @onyx;
+        border-top:.5rem solid @onyx;
+
+        @media @mobile{
+            font-size:4.4rem;
+            padding:1%;
+            margin:7vh 3vh;
+            line-height:9rem;
+        }
+        @media @tablet{
+            font-size:6rem;
+        }
     }
     .leftTile{
         // background-color:grey;
-        .displayFlex(flex-start,base-line);
+        .displayFlex(flex-start,center);
         flex-direction:row;
         padding:4vw;
         width: 100vw;
+        @media @mobile{
+            margin:11rem 0rem;
+
+            flex-direction: column;
+            justify-content:space-between;
+            // background-color:lightblue;
+            .textContainer{
+                // background-color:green;
+                padding:1rem;
+            }
+        }   
+
+    
         @media @tablet{
             height:50vh;
         }
@@ -65,23 +97,36 @@
             line-height:8rem;
             
             @media @mobile{
-                font-size: 3rem;
+                font-size: 2.5rem;
                 padding:7%;
+                text-align:center;
             }
             @media @tablet{
-                font-size: 4rem;
-                line-height: 6rem;
+                font-size: 2.5rem;
+                line-height: 5rem;
                 padding:1rem 4rem;
+                // background-color:green;
             }
         }
     }
     .rightTile{
         // background-color:darkgrey;
-        .displayFlex(flex-end,base-line);
+        .displayFlex(flex-start,center);
         flex-direction:row-reverse;
         padding:4vw;
-        width: 100vw;
+        width: 100%;
         text-align:right;
+        @media @mobile{
+            flex-direction: column;
+            // background-color:red;
+            margin:10rem 0rem;
+
+
+
+        }
+        @media @tablet{
+            height:50vh;
+        }
         @media @tablet{
             height:50vh;
         }
@@ -94,13 +139,13 @@
             @media @mobile{
                 font-size: 3rem;
                 padding:7%;
+                text-align:center;
             }
             @media @tablet{
-                font-size: 4rem;
-                line-height: 6rem;
+                font-size: 2.5rem;
+                line-height: 5rem;
                 padding:1rem 4rem;
-
-
+                // background-color:green;
             }
         }
     }
@@ -116,12 +161,12 @@
             line-height: 3rem;
 
         }
-
+        @media @mobile{
+                text-align:center;
+                // line-height:2rem;
+                // padding: 1rem 4rem;
+        }
 
     }
-    
-}
-footer{
-    height: 100vh;
-    background-color:@tan;
+  
 }
