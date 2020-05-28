@@ -127,11 +127,13 @@ table {
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 html,
 body {
   font-family: 'Roboto Mono', monospace;
   color: #ff5e00;
+  background-color: #f5f5ec;
 }
 h1,
 h2,
@@ -224,7 +226,7 @@ header nav a:last-child {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
-  padding: 1%;
+  padding: 1vh;
   background-color: #f5f5ec;
   margin-top: 12vh;
 }
@@ -238,12 +240,74 @@ header nav a:last-child {
   font-size: 2rem;
   padding-top: 1%;
 }
+footer {
+  height: 35%;
+  background-color: #31393C;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  color: #f5f5ec;
+}
+footer .topFooter {
+  padding: 5vh;
+  width: 90vw;
+  border-bottom: solid black 0.1rem;
+  text-align: center;
+}
+footer .topFooter h4 {
+  font-size: 3rem;
+  padding: 1vh;
+}
+footer .topFooter p {
+  font-size: 1.7rem;
+  padding: 1vh;
+  padding-bottom: 4rem;
+}
+@media (max-width: 500px) {
+  footer .topFooter p {
+    font-size: 1rem;
+    line-height: 2.5rem;
+  }
+}
+footer .topFooter a {
+  background-color: #f5f5ec;
+  cursor: pointer;
+  font-size: 2rem;
+  color: #31393C;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1%;
+}
+@media (max-width: 500px) {
+  footer .topFooter a {
+    padding: 2%;
+    font-size: 1.5rem;
+  }
+}
+footer .topFooter a:hover {
+  background-color: #ff5e00;
+  color: #f5f5ec;
+}
+footer .bottomFooter {
+  padding: 2vh;
+  text-align: center;
+}
+footer .bottomFooter h3 {
+  padding: 1vh;
+  font-size: 1.5rem;
+}
+footer .bottomFooter p {
+  padding: 1vh;
+  font-size: 1.3rem;
+}
 .landing {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f5f5ec;
-  height: 70vh;
+  height: 100vh;
   width: 100%;
 }
 .landing .textContainer {
@@ -251,6 +315,7 @@ header nav a:last-child {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 35vh;
 }
 .landing .textContainer h3 {
   font-size: 5rem;
@@ -296,8 +361,4 @@ header nav a:last-child {
   .landing .textContainer a {
     font-size: 2rem;
   }
-}
-footer {
-  height: 100vh;
-  background-color: #f5f5ec;
 }
