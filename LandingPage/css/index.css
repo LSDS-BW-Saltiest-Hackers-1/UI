@@ -139,7 +139,11 @@ h3 {
   font-family: 'Orbitron', sans-serif;
 }
 header {
+  display: none;
   background-color: #ff5e00;
+  position: fixed;
+  top: 0;
+  transition: top 0.3s;
   width: 100%;
   height: 11rem;
   display: flex;
@@ -168,12 +172,20 @@ header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100rem;
+  width: 60%;
+}
+@media (max-width: 800px) {
+  header nav {
+    width: 94%;
+  }
 }
 header nav a {
+  width: 24%;
   font-size: 2rem;
+  text-align: center;
   text-decoration: none;
   color: #31393C;
+  padding: 1% 4% 1% 5%;
   border-right: solid #31393C 0.4rem;
   padding-right: 5.1%;
   padding-top: 2rem;
@@ -182,6 +194,7 @@ header nav a {
 @media (max-width: 800px) {
   header nav a {
     padding-right: 4.4%;
+    border-right: solid #31393C 0.2rem;
   }
 }
 @media (max-width: 500px) {
@@ -197,6 +210,12 @@ header nav a {
     font-size: 1.5rem;
   }
 }
+@media (max-width: 800px) {
+  header nav a {
+    font-size: 1.7rem;
+    padding: 2% 4%;
+  }
+}
 header nav a:hover {
   color: #f5f5ec;
 }
@@ -210,6 +229,12 @@ header nav a:last-child {
   flex-direction: column;
   padding: 1%;
   background-color: #f5f5ec;
+  margin-top: 6%;
+}
+@media (max-width: 800px) {
+  .logoContainer {
+    margin-top: 14%;
+  }
 }
 .logoContainer h1 {
   font-size: 2rem;
@@ -220,7 +245,7 @@ header nav a:last-child {
   justify-content: center;
   align-items: center;
   background-color: #f5f5ec;
-  height: 75.5vh;
+  height: 70vh;
   width: 100%;
 }
 .landing .textContainer {
@@ -230,10 +255,21 @@ header nav a:last-child {
   flex-direction: column;
 }
 .landing .textContainer h3 {
-  font-size: 5em;
+  font-size: 5rem;
   text-align: center;
   color: #31393C;
   padding: 1%;
+}
+@media (max-width: 500px) {
+  .landing .textContainer h3 {
+    font-size: 3rem;
+    padding: 7%;
+  }
+}
+@media (max-width: 800px) {
+  .landing .textContainer h3 {
+    font-size: 4rem;
+  }
 }
 .landing .textContainer a {
   background-color: #ff5e00;
@@ -252,4 +288,18 @@ header nav a:last-child {
 .landing .textContainer a:hover {
   background-color: #31393C;
   color: #ff5e00;
+}
+@media (max-width: 500px) {
+  .landing .textContainer a {
+    width: 90%;
+  }
+}
+@media (max-width: 800px) {
+  .landing .textContainer a {
+    font-size: 2rem;
+  }
+}
+footer {
+  height: 100vh;
+  background-color: #f5f5ec;
 }

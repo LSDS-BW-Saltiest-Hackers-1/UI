@@ -2,17 +2,23 @@
 .landing{
     .displayFlex(center,center);
     background-color:@tan;
-    height:75.5vh;
+    height:70vh;
     width:100%;
     .textContainer{
         .displayFlex(center,center);
         flex-direction: column;
         h3{
-            font-size:5em;
+            font-size:5rem;
             text-align:center;
             color:@onyx;
             padding:1%;
-
+            @media @mobile{
+                font-size: 3rem;
+                padding:7%;
+            }
+            @media @tablet{
+                font-size: 4rem;
+            }
         }
         a{
             .button();
@@ -22,4 +28,8 @@
      
     }
 
+}
+footer{
+    height: 100vh;
+    background-color:@tan;
 }

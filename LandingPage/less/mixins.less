@@ -19,6 +19,12 @@
         background-color:@font-color;
         color:@button-bg;
     }
+    @media @mobile{
+        width:90%;
+    }
+    @media @tablet{
+        font-size: 2rem;
+    }
 }
 .borderRight(){
     border-right:solid @onyx .4rem;
@@ -27,6 +33,8 @@
     padding-bottom:2rem;
     @media @tablet{
         padding-right:4.4%;
+        border-right:solid @onyx .2rem;
+
     }
     @media @mobile{
         border-right:solid @onyx .3rem;
