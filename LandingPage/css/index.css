@@ -354,10 +354,11 @@ footer .bottomFooter p {
   margin-bottom: 35vh;
 }
 .landing .textContainer h3 {
-  font-size: 5rem;
+  font-size: 6rem;
   text-align: center;
   color: #31393C;
   padding: 1%;
+  line-height: 7rem;
 }
 @media (max-width: 550px) {
   .landing .textContainer h3 {
