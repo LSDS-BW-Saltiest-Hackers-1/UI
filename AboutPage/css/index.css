@@ -346,7 +346,7 @@ footer .bottomFooter p {
   justify-content: center;
   align-items: center;
   background-color: #f5f5ec;
-  height: 80vh;
+  height: 100vh;
   width: 100%;
 }
 .landing .textContainer {
@@ -401,7 +401,7 @@ footer .bottomFooter p {
   text-decoration: none;
   font-weight: bold;
   margin: 1%;
-  padding: 0% 1%;
+  padding: 1% 1% 0% 1%;
   text-align: center;
   line-height: 5rem;
   -webkit-animation: fade-in 0.75s infinite alternate;
@@ -462,8 +462,8 @@ footer .bottomFooter p {
     color: #ff5e00;
   }
 }
-#dS,
-.web {
+.web,
+#dS {
   padding-top: 5rem;
   display: flex;
   justify-content: space-evenly;
@@ -471,13 +471,13 @@ footer .bottomFooter p {
   flex-direction: column;
 }
 @media (max-width: 550px) {
-  #dS,
-  .web {
-    padding: 10rem 0rem;
+  .web,
+  #dS {
+    padding: 5rem 0rem;
   }
 }
-#dS h2,
-.web h2 {
+.web h2,
+#dS h2 {
   font-size: 7rem;
   text-align: center;
   padding: 1%;
@@ -486,22 +486,22 @@ footer .bottomFooter p {
   border-top: 0.5rem solid #31393C;
 }
 @media (max-width: 920px) {
-  #dS h2,
-  .web h2 {
+  .web h2,
+  #dS h2 {
     font-size: 6rem;
   }
 }
 @media (max-width: 550px) {
-  #dS h2,
-  .web h2 {
+  .web h2,
+  #dS h2 {
     font-size: 4.4rem;
     padding: 1%;
     margin: 7vh 3vh;
     line-height: 6rem;
   }
 }
-#dS .leftTile,
-.web .leftTile {
+.web .leftTile,
+#dS .leftTile {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -510,48 +510,48 @@ footer .bottomFooter p {
   width: 100vw;
 }
 @media (max-width: 550px) {
-  #dS .leftTile,
-  .web .leftTile {
-    margin: 14rem 0rem;
+  .web .leftTile,
+  #dS .leftTile {
+    margin: 20rem 0rem;
     flex-direction: column;
     justify-content: space-between;
   }
-  #dS .leftTile .textContainer,
-  .web .leftTile .textContainer {
+  .web .leftTile .textContainer,
+  #dS .leftTile .textContainer {
     padding: 1rem;
   }
 }
 @media (max-width: 920px) {
-  #dS .leftTile,
-  .web .leftTile {
+  .web .leftTile,
+  #dS .leftTile {
     height: 50vh;
   }
 }
-#dS .leftTile h3,
-.web .leftTile h3 {
+.web .leftTile h3,
+#dS .leftTile h3 {
   font-size: 5rem;
   color: #31393C;
   padding: 2rem 4rem;
   line-height: 8rem;
 }
 @media (max-width: 920px) {
-  #dS .leftTile h3,
-  .web .leftTile h3 {
+  .web .leftTile h3,
+  #dS .leftTile h3 {
     font-size: 2.5rem;
     line-height: 5rem;
     padding: 1rem 4rem;
   }
 }
 @media (max-width: 550px) {
-  #dS .leftTile h3,
-  .web .leftTile h3 {
+  .web .leftTile h3,
+  #dS .leftTile h3 {
     font-size: 2.5rem;
     padding: 5%;
     text-align: center;
   }
 }
-#dS .rightTile,
-.web .rightTile {
+.web .rightTile,
+#dS .rightTile {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -561,60 +561,65 @@ footer .bottomFooter p {
   text-align: right;
 }
 @media (max-width: 550px) {
-  #dS .rightTile,
-  .web .rightTile {
+  .web .rightTile,
+  #dS .rightTile {
     flex-direction: column;
-    margin: 14rem 0rem;
+    justify-content: space-between;
+    margin: 20rem 0rem;
   }
 }
 @media (max-width: 920px) {
-  #dS .rightTile,
-  .web .rightTile {
+  .web .rightTile,
+  #dS .rightTile {
     height: 50vh;
   }
 }
-#dS .rightTile h3,
-.web .rightTile h3 {
+.web .rightTile h3,
+#dS .rightTile h3 {
   font-size: 5rem;
   color: #31393C;
   padding: 2rem 4rem;
   line-height: 8rem;
 }
 @media (max-width: 550px) {
-  #dS .rightTile h3,
-  .web .rightTile h3 {
+  .web .rightTile h3,
+  #dS .rightTile h3 {
     font-size: 3rem;
     padding: 7%;
     text-align: center;
   }
 }
 @media (max-width: 920px) {
-  #dS .rightTile h3,
-  .web .rightTile h3 {
+  .web .rightTile h3,
+  #dS .rightTile h3 {
     font-size: 2.5rem;
     line-height: 5rem;
     padding: 1rem 4rem;
   }
 }
-#dS p,
-.web p {
+.web .rightTile:last-child,
+#dS .rightTile:last-child {
+  margin-bottom: 30rem;
+}
+.web p,
+#dS p {
   color: #31393C;
   padding: 2rem 4rem;
   font-size: 2rem;
   line-height: 4rem;
 }
 @media (max-width: 920px) {
-  #dS p,
-  .web p {
+  .web p,
+  #dS p {
     font-size: 1.5rem;
     padding: 1rem 3rem;
     line-height: 3rem;
   }
 }
 @media (max-width: 550px) {
-  #dS p,
-  .web p {
-    text-align: justify;
+  .web p,
+  #dS p {
+    text-align: center;
     line-height: 2.4rem;
     padding: 1rem 1rem;
   }

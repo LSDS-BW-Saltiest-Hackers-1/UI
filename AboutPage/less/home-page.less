@@ -2,7 +2,7 @@
 .landing{
     .displayFlex(center,center);
     background-color:@tan;
-    height:80vh;
+    height:100vh;
     width:100%;
     .textContainer{
         .displayFlex(center,center);
@@ -37,7 +37,7 @@
         a{
             .button();
             margin:1%;
-            padding:0% 1%;
+            padding:1% 1% 0% 1%;
             text-align:center;
             line-height: 5rem;
             .keyframes(fade-in;{
@@ -58,12 +58,20 @@
     }
 
 }
-#dS, .web{
+.web{
+    // background-color:pink;
+}
+ #dS{
+        // background-color:grey;
+}
+.web, #dS{
+   
+
     padding-top:5rem;
     .displayFlex(space-evenly,center);
     flex-direction:column;
     @media @mobile{
-        padding:10rem 0rem;
+        padding:5rem 0rem;
 
 
     }
@@ -83,7 +91,7 @@
             margin:7vh 3vh;
             line-height:6rem;
         }
- 
+        // background-color:lightblue;
     }
     .leftTile{
         // background-color:grey;
@@ -92,8 +100,7 @@
         padding:4vw;
         width: 100vw;
         @media @mobile{
-            margin:14rem 0rem;
-
+            margin:20rem 0rem;
             flex-direction: column;
             justify-content:space-between;
             // background-color:lightblue;
@@ -113,7 +120,7 @@
             padding:2rem 4rem;
             line-height:8rem;
             
-           
+        
             @media @tablet{
                 font-size: 2.5rem;
                 line-height: 5rem;
@@ -136,8 +143,10 @@
         text-align:right;
         @media @mobile{
             flex-direction: column;
+            justify-content:space-between;
+
             // background-color:red;
-            margin:14rem 0rem;
+            margin:20rem 0rem;
 
 
 
@@ -165,7 +174,9 @@
             }
         }
     }
-   
+    .rightTile:last-child{
+        margin-bottom:30rem;
+    }
     p{
         color:@onyx;
         padding:2rem 4rem;
@@ -178,12 +189,12 @@
 
         }
         @media @mobile{
-                text-align:justify;
+                text-align:center;
                 line-height:2.4rem;
                 padding: 1rem 1rem;
                 // background-color:green;
         }
 
     }
-  
 }
+
