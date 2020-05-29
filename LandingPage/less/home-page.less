@@ -1,0 +1,39 @@
+
+.landing{
+    .displayFlex(center,center);
+    background-color:@tan;
+    height:100vh;
+    width:100%;
+    .textContainer{
+        .displayFlex(center,center);
+        flex-direction: column;
+        h3{
+            font-size:5rem;
+            text-align:center;
+            color:@onyx;
+            padding:1%;
+            @media @mobile{
+                font-size: 3rem;
+                padding:7%;
+            }
+            @media @tablet{
+                font-size: 4rem;
+            }
+        }
+        a{
+            .button();
+            margin:1%;
+            
+        }
+        @keyframes slowfade {
+            from {background-color: @orange}
+            to {background-color: @onyx}
+            from {color: @onyx}
+            to {color: @orange;}
+        }
+        // background-color:grey;
+        margin-bottom:35vh;
+     
+    }
+
+}

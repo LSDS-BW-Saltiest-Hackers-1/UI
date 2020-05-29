@@ -1,0 +1,56 @@
+// Mixins here
+.displayFlex(@justify, @align){
+    display:flex;
+    justify-content:@justify;
+    align-items: @align;
+}
+
+.button(){
+    background-color: @button-bg;
+    cursor:pointer;
+    font-size: 3rem;
+    border-radius:none;
+    color: @font-color;
+    .displayFlex(center,center);
+    padding:3%;
+    text-decoration:none;
+    font-weight:bold;
+    &:hover{
+        background-color:@font-color;
+        color:@button-bg;
+        animation-name: slowfade;
+        animation-duration: .5s;
+    }
+    @media @mobile{
+        width:90vw;
+    }
+    @media @tablet{
+        font-size: 2rem;
+    }
+}
+.borderRight(){
+    border-right:solid @onyx .4rem;
+    padding-right:5.1%;
+    padding-top:2rem;
+    padding-bottom:2rem;
+    @media @tablet{
+        border-right:solid @onyx .2rem;
+
+    }
+    @media @mobile{
+        border-right:solid @onyx .15rem;
+        
+    }
+
+}
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+.flash(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
+
