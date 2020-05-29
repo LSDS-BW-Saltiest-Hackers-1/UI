@@ -376,6 +376,7 @@ footer .bottomFooter p {
   text-align: center;
   color: #31393C;
   padding: 1%;
+  line-height: 7rem;
 }
 @media (max-width: 920px) {
   .landing .textContainer h3 {
